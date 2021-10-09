@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayoung Self intorduction</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<style>
+    body {max-width: 980px; margin: 0px auto; background-color:floralwhite;}
+    * {font-family: Arial, Helvetica, sans-serif; line-height: 150%;}
+    section {display: flex;}
+    article.main {flex: 3;}
+    aside.right {flex: 1;}
+    header span {display: inline;}
+    header img {height: 100px;}
+    li{list-style-type: none;}
+    a {text-decoration: none;}
+    nav a {color: wheat;}
+
+</style>
+
+</head>
+
+<body class="w3-margin-top">
+
+    <header class="w3-container w3-margin-top">
+        <div id="Ayoung">
+            <img src="./images/turtle.png" alt="logo">
+            <a href="instroduction_weak06.html"><span class="w3-xxlarge w3-text"><b>Ayoung Site</b></span></a>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="w3-bar w3-border w3-teal w3-center">
+            <li style="width: 25%;" class="w3-bar-item w3-button w3-border-right"><a href="#Profile"> Profile </a></li>
+            <li style="width: 25%;" class="w3-bar-item w3-button w3-border-right"><a href="#MyInfo"> MyInfo </a></li>
+            <li style="width: 25%;" class="w3-bar-item w3-button w3-border-right"><a href="#Experience"> Experience </a></li>
+            <li style="width: 25%;" class="w3-bar-item w3-button"><a href="#Favorite"> Favorite </a></li>            
+        </ul>
+    </nav>
+
+    <br>
+    
+    <section class="contents">
+        
+        <article class="main">
+
+            <div class="w3-panel w3-leftbar w3-border-teal w3-sand">
+                <p id="Profile"><b>Profile</b></p>
+              </div>
+            <br>
+
+            <div style="display: flex;">
+            <img style="flex: 1;" src="./images/photo.jpg" alt="Photo" width="200">
+                <div  class="w3-panel w3-border w3-round-large w3-border-teal" style="flex: 2; margin: 10px;">
+                    <p>공아영</p>
+                    <p>2001.02.02</p>
+                    <p>동아대학교</p>
+                    <p>경영정보학과 2016666</p>
+                    <p>010-1234-5678</p>
+                </div>
+            </div>
+            <br>
+
+        <div class="w3-panel w3-leftbar w3-border-teal w3-sand">
+            <p id="MyInfo"><b>MyInfo</b></p>
+          </div>
+        <br>
+        <p>안녕하세요 저는 웹프로그래밍을 수강 중인 공아영입니다.</p>
+        <br>
+
+
+        <div class="w3-panel w3-leftbar w3-border-teal w3-sand">
+            <p id="Experience"><b>Experience</b></p>
+          </div>
+        <br>
+        
+        <table class="w3-table-all">
+            <tr>
+                <td>대외활동1</td>
+                <td>2021.3 ~ </td>
+                <td>활동내용</td>
+            </tr>
+            <tr>
+                <td>대외활동2</td>
+                <td>2021.7 ~ </td>
+                <td>활동내용</td>
+            </tr>
+            <tr>
+                <td>외국어</td>
+                <td>2021.5 ~ </td>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <td>자격증</td>
+                <td>2021.8 ~ </td>
+                <td>내용</td>
+            </tr>
+        </table>
+        <br>
+
+
+        <div class="w3-panel w3-leftbar w3-border-teal w3-sand">
+            <p id="Favorite"><b>Favorite</b></p>
+          </div>
+
+        <h2>음식</h2>
+        <p>고구마맛탕</p>
+
+        <hr style="background: wheat;height: 1px;">
+
+        <h2>영상</h2>
+        <div class="video">
+            <iframe width="420" height="255" src="https://www.youtube.com/embed/84LJ5rUjxQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <hr style="background: wheat;height: 1px;">
+
+        <h2>드라마</h2>
+        <p>괜찮아, 사랑이야</p>
+        <p>미생</p>
+        
+        <hr style="background: wheat;height: 1px;">
+
+        <h2>노래</h2>
+        <div class="video">
+            <iframe width="420" height="255" src="https://www.youtube.com/embed/IemUCS3o8hc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <br><br><br>
+    </article>
+
+    <aside class="right">
+        
+        <div id="login" class="w3-container">
+            <h3 class="w3-panel w3-border w3-border-teal w3-round-xxlarge w3-text-teal" style="text-align: center;"><b> Login </b></h3>
+            <form action="#" method="post" class="w3-container">
+               ID : <input type="text" name="id" class="w3-input w3-border w3-border-teal w3-light-grey w3-hover-white"><br>
+               Password : <input type="password" name="pw" id="pass" class="w3-input w3-border w3-border-teal w3-light-grey w3-hover-white" ><br>
+               <input type="submit" value="login" class="w3-btn w3-teal">
+               <input type="reset" value="cancel" class="w3-btn w3-teal">
+            </form>
+        </div>
+
+        <div class="search" style="display: flex; margin: 10%;";">
+            <input type="text" class="w3-bar-item w3-input w3-white" placeholder="Search..">
+            <button class="w3-bar-item w3-button w3-teal w3-mobile">Go</button>
+            </div>
+
+    </aside>
+
+    </section>    
+</body>
+
+<footer class = "w3-padding-small" style="background-color: wheat;">
+    <div id="copyright"> &copy; Ayoung </div>
+    <div id="address"> 부산 서구 부민동 2가 </div>
+    <div id="phone"> 010-1234-5678</div>
+    <div id="email"> email : gonga02@naver.com </div>
+    <div id="sns"> <i class="fa fa-instagram" style="font-size: 30px;"></i>
+        <i class="fa fa-facebook-square" style="font-size: 30px;"></i>
+        <a href="https://github.com/mygumi1222"><i class="fa fa-github" style="font-size: 30px;"></i></a>
+    </div>
+    
+</footer>
+
+</html>
