@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디어스마켓</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/ideasmarket.js"></script>
+
+</head>
+
+
+<body>
+    
+
+    <div class="loginSidebar">
+
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-top" 
+        style="display: none; right:0; width: 30%; height: auto;" id="rightMenu">
+
+            <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large w3-hover-none">&times;</button>
+            
+            <div id="login" class="w3-container">
+
+                <h3 style="margin-left: 10px;"><b>로그인</b><img src="./image/ideaslogo.png" style="width: 50px;"></h3>
+
+
+                <input type="text" name="" id="id" placeholder="이메일 또는 아이디"><br>
+                
+                <input type="password" name="" id="pw" placeholder="비밀번호"><br>
+
+                <a href="" style="float: right; font-size: 12px;">아이디/비밀번호를 잊으셨나요?</a>
+
+
+                <button onclick="login();">로그인</button>
+
+                <div class="hr-sect">또는</div>
+
+
+                <div class="snsLogin">
+                    <a href="https://www.naver.com/"><button class="naver"><img src="./image/naver.jpg">  네이버로 로그인</button></a>
+                    <a href="https://www.facebook.com/"><button class="facebook"><img src="./image/facebook.jpg"> 페이스북으로 로그인</button></a>
+                    <a href="https://www.kakaocorp.com/page/"><button class="kakao" style="margin-bottom: 30px;"><img src="./image/kakao.jpg">카카오톡으로 로그인</button></a>
+                </div>
+
+            </div>
+
+          </div>
+
+    </div>
+
+
+
+
+
+
+    <header>
+
+        
+        <div class="logoBox">
+            <a href=""><img src="./image/ideasmarketLogo.png" class="ideasLogo" alt="ideaslogo"></a>
+            <a href=""></a>     
+        </div>
+
+
+
+
+
+        <div class="searchBox">
+            <input type="text" class="serach" placeholder="아이디어를 찾아보세요.">
+            <a href=""><button class="searchIcon"><i class="fa fa-search w3-large"></i></button></a>
+        </div>
+
+
+        <div class="loginBox">
+            <button class="loginBtn" onclick="openRightMenu()">로그인</button></a>
+            <a href=""><button>회원가입</button></a>
+        </div>
+    </header>
+
+
+
+
+
+
+
+    <div class="w3-sidebar w3-bar-block" style="display: none;" id="sideBar">
+   
+        <div class="category">
+
+        <ul>
+            <li><button onclick="w3_close()" class="w3-bar-item w3-button w3-large" style="background-color: #ffb923;">&times;</button></li>
+
+            <li style="margin-top: 20px;"><a href=""><h2>모든 프로젝트</h2></a></li>
+            <li><a href=""><h2>인기 프로젝트</h2></a></li>
+            <li><a href=""><h2>맞춤 프로젝트</h2></a></li>
+            <li><a href=""><h2>성공 임박 프로젝트</h2></a></li>
+            <li><a href=""><h2>새로운 프로젝트</h2></a></li>
+        </ul>
+
+        <hr>
+
+            <ul>
+                <li><a href=""><h2>공지사항</h2></a></li>
+                <li><a href=""><h2>이벤트</h2></a></li>
+                <li><a href=""><h2>아이디어스파트너</h2></a></li>
+            </ul>
+ 
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <nav>
+        <div class="navItems">
+            <ul>
+                <li><button class="w3-large" onclick="w3_open()">☰</button></li>
+                <li><a href="" style="border-right: 2px solid burlywood;">아이디어 올리기</a></li>
+                <li><a href="" style="border-right: 2px solid burlywood;">아이디어 둘러보기</a></li>
+                <li><a href="" style="border-right: 2px solid burlywood;">아이디어스 파트너</a></li>
+                <li><a href="">ABOUT</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+
+
+
+
+
+    
+    <main>
+        <div class="main-container">
+
+            <div class="ideasIntro">
+                <div class="w3-content" style="max-width:1080px; max-height: 350px; position:relative; overflow: hidden;">
+
+                <img class="mainSlides" src="./image/ideasbanner00.jpg">
+                <img class="mainSlides" src="./image/ideasbanner01.jpg">
+                <img class="mainSlides" src="./image/ideasbanner02.jpg">
+                
+                <a class="w3-btn-floating w3-xlarge" style="position:absolute;top:45%;left:20px; cursor: pointer;" onclick="plusDivs(-1)">❮</a>
+                <a class="w3-btn-floating w3-xlarge" style="position:absolute;top:45%;right:20px; cursor: pointer;" onclick="plusDivs(1)">❯</a>
+            </div>
+
+
+
+            <hr>
+
+
+
+            <div class="ideasUpload">
+                <div class="ideasimg">
+                    <img src="./image/ideasicon00.png" style="width: 400px;">
+                </div>
+
+                <div class="goUpload">
+                    <h1><b> IDEAS PROJECT </b></h1>
+                    <ul>
+                        <li style="font-size: 24px;">마음 속 아이디어를 아이디어스에서 현실로!</li>
+                        <li>아이디어스 펀딩은 누구에게나 열려있습니다. 프로젝트를 위한 자금을 마련하고, 제작과 든든한 파트너 네트워크도 확보해보세요.</li>
+                    </ul>
+
+                    <a href=""><button class="uploadBtn"> 프로젝트 등록 </button></a>
+                    <a href=""><button class="guideBtn"> 등록 가이드 </button></a>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="ideasPartner">
+                    <h1><b> 아이디어스 파트너 </b></h1>
+                    <h3>프로젝트를 시작하는데 도움이 필요하신가요?</h3>
+                    <p>아이디어스에서 프로젝트에 도움을 주고 함께할 파트너를 찾을 수 있습니다.</p>
+                    컨텐츠 제작부터 마케팅, 컨설팅 등 펀딩 준비에 필요한 서비스를 제공하는 아이디어스 파트너를 만나보세요.
+                    <p></p>
+                    <div class="partnerBox">
+
+                        <div class="partner">
+
+                        <ul>
+                                <li><h4>출판펀딩파트너</h4></li>
+                                <li><img src="./image/partner00.jpg" style="width:80%"></li>
+                                <li>122,218,524원 펀딩</li>
+                                <li>총 프로젝트 17</li>
+                                <li><a href=""><button class="uploadBtn"> 파트너 보기 </button></a>
+                                    <a href=""><button class="guideBtn"> 파트너 신청 </button></a></li>
+                        </ul>
+
+                        <ul>
+                            <li><h4>뷰티펀딩파트너</h4></li>
+                            <li><img src="./image/partner01.jpg" style="width: 80%;"></li>
+                            <li>125,654,245원 펀딩</li>
+                            <li>총프로젝트 9</li>
+                            <li><a href=""><button class="uploadBtn"> 파트너 보기 </button></a>
+                                <a href=""><button class="guideBtn"> 파트너 신청 </button></a></li>
+                        </ul>
+
+                        <ul>
+                            <li><h4>게임펀딩파트너</h4></li>
+                            <li><img src="./image/partner02.jpg" style="width: 80%;"></li>
+                            <li>511,324,560원 펀딩</li>
+                            <li>총프로젝트 21</li>
+                            <li><a href=""><button class="uploadBtn"> 파트너 보기 </button></a>
+                                <a href=""><button class="guideBtn"> 파트너 신청 </button></a></li>
+                        </ul>
+
+                        <ul>
+                            <li><h4>농식품펀딩파트너</h4></li>
+                            <li><img src="./image/partner03.jpg" style="width: 80%;"></li>
+                            <li>321,584,112원 펀딩</li>
+                            <li>총프로젝트 13</li>
+                            <li><a href=""><button class="uploadBtn"> 파트너 보기 </button></a>
+                                <a href=""><button class="guideBtn"> 파트너 신청 </button></a></li>
+                        </ul>
+
+                </div>
+            </div>
+            <a href=""><button class="morePartner">파트너 더보기</button></a>
+
+            
+
+
+
+            <div class="faq">
+                <p style="color: #ffb923; font-size: 20px;"><b>FAQ</b></p>
+                <a href=""><h1><b>자주묻는질문</b></h1></a>
+                아이디어스 고객님의 편리하고 즐거운 펀딩을 위해 아이디어스가 제공하는 서비스에 대한 안내입니다.
+                <hr>
+
+                <div class="faqBox">
+                    <ul>
+                        <li><h5> <p>Q.</p> <a href="">프로젝트가 어떻게 진행되는지 궁금해요.</a> </h5></li>
+                        <li><h5>  <p>Q.</p> <a href="">펀딩하는 방법이 궁금해요.</a> </h5></li>
+                        <li><h5>  <p>Q.</p><a href="">파트너는 어떻게 찾을 수 있는지 궁금해요.</a> </h5></li>
+                        <li><h5>  <p>Q.</p> <a href="">수수료는 어떻게 되는지 궁금해요.</a> </h5></li>
+                        <li><h5>  <p>Q.</p> <a href="">심사기준이 궁금해요.</a> </h5></li>
+                    </ul>
+
+                </div>
+
+                
+
+            </div>
+
+
+       
+       
+        </div>
+
+
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="footerBox">
+            <div class="noticeBox">
+                <span>아이디어스</span>
+                <ul>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">이벤트</a></li>
+                    <li><a href="">채용</a></li>
+                    <li><a href="">파트너</a></li>
+                </ul>
+            </div>
+
+            <div class="ruleBox">
+                <span>정책</span>
+                <ul>
+                    <li><a href="">아이디어스마켓운영정책</a></li>
+                    <li><a href="">파트너운영정책</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">투자운영정책</a></li>
+                </ul>
+            </div>
+
+            <div class="appBox">
+                <span> APP </span>
+                <ul>
+                    <li><button class="androidBtn">안드로이드</button></li>
+                    <li><button class="iosBtn">IOS</button></li>
+                </ul>
+                
+            </div>
+
+            <div class="helpBox">
+                <span>고객지원</span>
+                <ul>
+                    <li>평일 (10:00 ~ 21:00)</li>
+                    <li>1234-5678</li>
+                    <li>ideasupport@donga.kr</li>
+                    <li><button class="questionBtn">아이디어스에 문의</button></li>
+                </ul>
+            </div>
+
+        </div>
+        <hr>
+        <div class="bottomBox">
+            <div class="ideasInfo">
+                <ul>
+                    <li><b>아이디어스(주)</b></li>
+                    <li><b>대표</b> 공아영</li>
+                    <li><b>사업자등록번호</b> 123-45-67890</li>
+                    <li><b>통신판매업신고번호</b> 0000-0000</li>
+                    <li><b>주소</b> 부산광역시 서구 부민동 구덕로 225</li>
+                    <li><b> &copy; IDEAS DORP. </b></li>
+                </ul>
+            </div>
+            
+            <div class="snsIcon">
+                <!--
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-kakao"></a>
+                -->
+                <a href=""><i><img src="./image/kakaotalk.png" alt="kakao" style="width: 50px;"></i></a>
+                <a href=""><i><img src="./image/instagram.png" alt="instagram" style="width: 50px;"></i></a>
+                <a href=""><i><img src="./image/youtube.png" alt="youtube" style="width: 50px;"></i></a>
+                <a href=""><i><img src="./image/twitter.png" alt="twitter" style="width: 50px;"></i></a>           
+                <a href=""><i><img src="./image/blog.png" alt="blog" style="width: 50px;"></i></a>     
+
+            </div>
+        </div>
+
+
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+footer {
+    background: #fabb337e;
+    margin: auto;
+    width: 1080px ;
+    min-height: 300px;
+    padding: 30px 30px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.footerBox span {
+    font-weight: bold;
+}
+
+.footerBox {
+    display: inline-flex;
+    flex: 1;
+    justify-content: space-between;
+
+    margin-bottom: 0px;
+}
+
+.footerBox a:hover {
+    text-decoration:underline;
+}
+
+.noticeBox {
+    flex: 1;
+}
+
+.ruleBox {
+    flex: 2;
+}
+
+.appBox {
+    flex: 2;
+}
+
+.helpBox {
+    flex:1;
+}
+
+.appBox button {
+    background-color: #ffb923;
+    width: 120px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.helpBox button {
+    background-color:whitesmoke;
+    border: 3px solid tan;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul>li {
+    list-style: none;
+    line-height: 2em;
+}
+
+
+ul>li>a {
+    text-decoration: none;
+}
+
+.bottomBox {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.ideasInfo {
+    flex: 2;
+}
+
+.ideasInfo >ul>li {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 12px;
+}
+
+.snsIcon {
+    flex: 1;
+}
+
+
+.snsIcon i:hover {
+    opacity: 0.5
+}
+
+/*
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  */
+  
