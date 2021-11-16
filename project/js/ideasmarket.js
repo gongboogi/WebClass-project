@@ -25,6 +25,8 @@ function login(){
                    alert (id + "님 로그인되었습니다.")
                    document.getElementById("login").innerHTML="<h4>" + id + 
                       "님 반갑습니다! </h2>"; 
+                      document.getElementById("myPage").innerHTML="<h4>" + id + 
+                        "님 반갑습니다! </h2>"; 
                } else {
                    alert("비밀번호를 확인하세요.");
                }
