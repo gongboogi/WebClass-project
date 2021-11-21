@@ -75,16 +75,9 @@ main {
 .uploadedList table {
     width: 1000px;
     margin: auto;
-}
-
-.uploadedList th{
-    margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    text-align: center;
 }
 
 .uploadedList td{
-    margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-bottom: 100px;
 }
