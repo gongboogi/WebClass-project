@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/main-startidea.css">
+    <script src="./js/ideasmarket.js"></script>
     <script>
-        
     let data = []
 
     function tablePrint(){
@@ -21,7 +21,7 @@
     text = `<table><tr><th style="width:100px">카테고리</th><th>제목</th><th>소개</th><th>대표이미지</th></tr>`;
 
         for(let i = 0 ; i < data.length; i++) {
-            text+=`<tr><td style="width:100px">${data[i][0]}</td><td>${data[i][1]}</td><td>${data[i][2]}</td><td><img src=${data[i][3]} style="width: 180px"></td><tr>`;
+            text+=`<tr><td style="width:100px">${data[i][0]}</td><td>${data[i][1]}</td><td>${data[i][2]}</td><td><img src=${data[i][3]} style="width: 200px"></td><tr>`;
         }
 
         text += `</table>`;
