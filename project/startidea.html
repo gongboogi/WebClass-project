@@ -12,37 +12,37 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/main-startidea.css">
-
     <script>
-        let data = []
+        
+    let data = []
 
-        function tablePrint(){
-        let text ='';
-        text = `<table><tr><th style="width:100px">카테고리</th><th>제목</th><th>소개</th><th>대표이미지</th></tr>`;
+    function tablePrint(){
+    let text ='';
+    text = `<table><tr><th style="width:100px">카테고리</th><th>제목</th><th>소개</th><th>대표이미지</th></tr>`;
 
-            for(let i = 0 ; i < data.length; i++) {
-                text+=`<tr><td style="width:100px">${data[i][0]}</td><td>${data[i][1]}</td><td>${data[i][2]}</td><td><img src=${data[i][3]} style="width: 180px"></td><tr>`;
-            }
-
-            text += `</table>`;
-                document.getElementById("projectList").innerHTML = text;
+        for(let i = 0 ; i < data.length; i++) {
+            text+=`<tr><td style="width:100px">${data[i][0]}</td><td>${data[i][1]}</td><td>${data[i][2]}</td><td><img src=${data[i][3]} style="width: 180px"></td><tr>`;
         }
 
-        function fileUpload(){
-            let a = new Array();
-            let category = document.getElementById("category").value;
-            let title = document.getElementById("ideaTitle").value;
-            let intro = document.getElementById("ideaIntro").value;
-            let image = "./image/" + document.getElementById("ideaImg").files[0].name;
-            a[0] = category;
-            a[1] = title;
-            a[2] = intro;
-            a[3] = image;
-            data.push(a);
-            console.log(data);
-        }        
-        
+        text += `</table>`;
+            document.getElementById("projectList").innerHTML = text;
+    }
+
+    function fileUpload(){
+        let a = new Array();
+        let category = document.getElementById("category").value;
+        let title = document.getElementById("ideaTitle").value;
+        let intro = document.getElementById("ideaIntro").value;
+        let image = "./image/" + document.getElementById("ideaImg").files[0].name;
+        a[0] = category;
+        a[1] = title;
+        a[2] = intro;
+        a[3] = image;
+        data.push(a);
+        console.log(data);
+    }        
     </script>
+
 </head>
 
 
