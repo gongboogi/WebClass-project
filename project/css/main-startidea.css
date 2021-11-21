@@ -1,0 +1,90 @@
+main {
+    background: white; 
+    margin: auto;
+    margin-top: 0;
+    width: 1080px;
+}
+
+.welcomeidea, .uploadedProject {
+    background-color: #fff1d4;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.projectEdit, .uploadedList {
+    background-color: seashell;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.projectEdit h4 {
+    margin: 0;
+}
+
+.projectEdit ul {
+    margin-bottom: 20px;
+}
+
+.projectEdit input {
+    margin-left: 20px;
+}
+
+.projectEdit button {
+    background-color: #fddd9a;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+
+.projectEdit button:hover {
+    background-color: #ffb923;
+}
+
+.projectEdit hr {
+    background-color:#ffb923;
+    height: 1px;
+    border: none;
+    margin-right: 15px;
+}
+
+#ideaTitle{
+    width: 300px;
+}
+
+#ideaIntro {
+    width: 500px;
+    height: 60px;
+}
+
+
+.projectEdit button {
+    padding: 10px;
+    margin-right: 20px;
+}
+
+
+.uploadedList {
+    min-height: 300px;
+}
+
+.uploadedList table {
+    width: 1000px;
+    margin: auto;
+}
+
+.uploadedList th{
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.uploadedList td{
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
