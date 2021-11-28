@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디어스마켓</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main-startidea.css">
+    <script src="./js/ideasmarket.js"></script>
+    
+    <script>
+           function popup() {
+                window.open("welcomeidea.html", "welcomeideas", "top=50% left=50% width = 650, height=650, scrollbars=no, resizable=no");
+           }
+    </script>
+
+</head>
+
+
+
+<body onload="popup();">
+    <div class="loginSidebar">
+
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-top" 
+        style="display: none; right:0; min-width: 400px; ; height: auto;" id="rightMenu">
+
+            <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large w3-hover-none">&times;</button>
+            
+            <div id="login" class="w3-container">
+
+                <h3 style="margin-left: 10px;"><b>로그인</b><img src="./image/ideaslogo.png" style="width: 50px;"></h3>
+
+
+                <input type="text" name="" id="id" placeholder="이메일 또는 아이디"><br>
+                
+                <input type="password" name="" id="pw" placeholder="비밀번호"><br>
+
+                <a href="" style="float: right; font-size: 12px;">아이디/비밀번호를 잊으셨나요?</a>
+
+
+                <button onclick="login();">로그인</button>
+
+                <div class="hr-sect">또는</div>
+
+
+                <div class="snsLogin">
+                    <a href="https://www.naver.com/"><button class="naver"><img src="./image/naver.jpg">  네이버로 로그인</button></a>
+                    <a href="https://www.facebook.com/"><button class="facebook"><img src="./image/facebook.jpg"> 페이스북으로 로그인</button></a>
+                    <a href="https://www.kakaocorp.com/page/"><button class="kakao" style="margin-bottom: 30px;"><img src="./image/kakao.jpg">카카오톡으로 로그인</button></a>
+                </div>
+
+            </div>
+
+          </div>
+
+    </div>
+
+
+
+    <header>
+
+        
+        <div class="logoBox">
+            <a href="./index.html"><img src="./image/ideasmarketLogo.png" class="ideasLogo" alt="ideaslogo"></a>
+            <a href=""></a>     
+        </div>
+
+        <div class="searchBox">
+            <input type="text" class="serach" placeholder="아이디어를 찾아보세요.">
+            <a href=""><button class="searchIcon"><i class="fa fa-search w3-large"></i></button></a>
+        </div>
+
+        <div class="loginBox" id = "myPage">
+            <button class="loginBtn" onclick="openRightMenu()">로그인</button></a>
+            <a href="./join.html" id="joinBtn"><button>회원가입</button></a>
+        </div>
+    </header>
+
+
+    <div class="w3-sidebar w3-bar-block" style="display: none;" id="sideBar">
+   
+        <div class="category">
+
+        <ul>
+            <li><button onclick="w3_close()" class="w3-bar-item w3-button w3-large" style="background-color: #ffb923;">&times;</button></li>
+
+            <li style="margin-top: 20px;"><a href=""><h2>모든 프로젝트</h2></a></li>
+            <li><a href=""><h2>인기 프로젝트</h2></a></li>
+            <li><a href=""><h2>맞춤 프로젝트</h2></a></li>
+            <li><a href=""><h2>성공 임박 프로젝트</h2></a></li>
+            <li><a href=""><h2>새로운 프로젝트</h2></a></li>
+        </ul>
+
+        <hr>
+
+            <ul>
+                <li><a href=""><h2>공지사항</h2></a></li>
+                <li><a href=""><h2>이벤트</h2></a></li>
+                <li><a href=""><h2>아이디어스파트너</h2></a></li>
+            </ul>
+ 
+        </div>
+
+
+    </div>
+
+
+
+
+    <nav>
+        <div class="navItems">
+            <ul>
+                <li><button class="w3-large" onclick="w3_open()">☰</button></li>
+                <li><a href="" style="border-right: 2px solid burlywood;">아이디어 올리기</a></li>
+                <li><a href="" style="border-right: 2px solid burlywood;">아이디어 둘러보기</a></li>
+                <li><a href="" style="border-right: 2px solid burlywood;">아이디어스 파트너</a></li>
+                <li><a href="">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+
+
+    </main>
+
+
+
+
+    <footer>
+        <div class="footerBox">
+            <div class="noticeBox">
+                <span>아이디어스</span>
+                <ul>
+                    <li><a href="">공지사항</a></li>
+                    <li><a href="">이벤트</a></li>
+                    <li><a href="">채용</a></li>
+                    <li><a href="">파트너</a></li>
+                </ul>
+            </div>
+
+            <div class="ruleBox">
+                <span>정책</span>
+                <ul>
+                    <li><a href="">아이디어스마켓운영정책</a></li>
+                    <li><a href="">파트너운영정책</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">투자운영정책</a></li>
+                </ul>
+            </div>
+
+            <div class="appBox">
+                <span> APP </span>
+                <ul>
+                    <li><button class="androidBtn">안드로이드</button></li>
+                    <li><button class="iosBtn">IOS</button></li>
+                </ul>
+                
+            </div>
+
+            <div class="helpBox">
+                <span>고객지원</span>
+                <ul>
+                    <li>평일 (10:00 ~ 21:00)</li>
+                    <li>1234-5678</li>
+                    <li>ideasupport@donga.kr</li>
+                    <li><button class="questionBtn">아이디어스에 문의</button></li>
+                </ul>
+            </div>
+
+        </div>
+        <hr>
+        <div class="bottomBox">
+            <div class="ideasInfo">
+                <ul>
+                    <li><b>아이디어스(주)</b></li>
+                    <li><b>대표</b> 공아영</li>
+                    <li><b>사업자등록번호</b> 123-45-67890</li>
+                    <li><b>통신판매업신고번호</b> 0000-0000</li>
+                    <li><b>주소</b> 부산광역시 서구 부민동 구덕로 225</li>
+                    <li><b> &copy; IDEAS DORP. </b></li>
+                </ul>
+            </div>
+            
+            <div class="snsIcon">
+
+                <a href=""><i><img src="./image/kakaotalk.png" alt="kakao" style="width: 50px;"></i></a>
+                <a href=""><i><img src="./image/instagram.png" alt="instagram" style="width: 50px;"></i></a>
+                <a href=""><i><img src="./image/youtube.png" alt="youtube" style="width: 50px;"></i></a>
+                <a href=""><i><img src="./image/twitter.png" alt="twitter" style="width: 50px;"></i></a>           
+                <a href=""><i><img src="./image/blog.png" alt="blog" style="width: 50px;"></i></a>     
+
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+</html>
