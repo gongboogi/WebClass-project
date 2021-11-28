@@ -1,0 +1,61 @@
+body {
+    background-color: cornsilk;
+}
+
+*{padding: 0; margin: 0;}
+
+.ideasevent {
+    padding: 15px;
+}
+
+hr {
+    background-color:#ffb923;
+    height: 1px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #fddd9a;
+    border: none;
+    cursor: pointer;
+}
+
+.startBtn {
+    width: 300px;
+    margin: auto;
+}
+
+.startBtn button {
+    padding: 10px;
+    width: 300px;
+    font-size: 20px;
+}
+
+footer {    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffb923;
+}
+
+footer.btnBox_todayClose {
+    padding: 0.5rem 0 0.7rem;
+    display: flex;
+    justify-content: flex-end;
+}
+    form {padding-right: 2rem;}
+    input#chkday {
+        width: 17px;
+        height: 17px; 
+        vertical-align: middle;
+    }
+    label {vertical-align: middle;}
