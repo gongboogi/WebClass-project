@@ -1,0 +1,59 @@
+main {
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    background-color: seashell;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+input {
+    display: inline-block;
+    width: 200px;
+}
+
+fieldset {
+    margin: auto;
+    border: #ffb923 solid 2px;
+    margin-bottom: 20px;
+    width: 700px;
+}
+
+legend {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.joinP {
+    font-size: 13px;
+    color: #ffb923;
+}
+
+.btn {
+    background-color: #ffb923;
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+#cart, #list{
+    display: flex;
+}
+
+#img1, #img2, #img3 {
+    flex: 3;
+    margin-top: 15px;
+}
+
+#list button, #cart button {
+    width: 50px;
+    padding: 5px;
+    background-color: #ffb923;
+    border: none;
+}
