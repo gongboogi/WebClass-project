@@ -23,7 +23,7 @@ main {
     width: 100%;
     padding: 10px;
     margin: 10px;
-    border: 2px solid #fabb337e;
+    border: 2px solid #fddd9a;
     border-radius: 5px;
 }
 
@@ -33,7 +33,7 @@ main {
     margin: 10px;
     padding: 10px;
     border: none;
-    background-color: #fabb337e;
+    background-color: #fddd9a;
     cursor: pointer;
     border-radius: 5px;
     transition-duration: 0.4s;
@@ -177,7 +177,7 @@ main {
 }
 
 .partner button {
-    background-color: #fabb337e;
+    background-color: #fddd9a;
     border: none;
     margin: 5px;
     cursor: pointer;

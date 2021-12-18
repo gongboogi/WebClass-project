@@ -26,7 +26,7 @@ header {
     height: 45px;
     padding-left: 12px;
     padding-right: 12px;
-    border: 3px solid #fabb337e ;
+    border: 3px solid #fddd9a ;
     border-radius: 20px;
 }
 .searchBox input {
@@ -74,7 +74,7 @@ nav {
     /*
     border: 2px solid Yellow;
     */
-    background-color: #fabb337e;
+    background-color: #fddd9a;
         align-items: center;
 
 }
@@ -105,7 +105,7 @@ nav {
 
 .loginBox button {
     padding: 5px 10px;
-    border: 2px solid #fabb337e;;
+    border: 2px solid #fddd9a;;
     border-radius: 8px ;
     background-color: #ffb923;
     cursor: pointer;
