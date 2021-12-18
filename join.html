@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +11,16 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main-startidea.css">
+    <link rel="stylesheet" href="./css/join.css">
     <script src="./js/ideasmarket.js"></script>
-
+    <script src="./js/join.js"></script>
+    <script src="./js/interested.js"></script>
 </head>
 
 
-<body>
-    
 
+<body>
     <div class="loginSidebar">
 
         <div class="w3-sidebar w3-bar-block w3-card w3-animate-top" 
@@ -57,41 +59,24 @@
 
 
 
-
-
-
     <header>
 
         
         <div class="logoBox">
-            <a href=""><img src="./image/ideasmarketLogo.png" class="ideasLogo" alt="ideaslogo"></a>
+            <a href="./index.html"><img src="./image/ideasmarketLogo.png" class="ideasLogo" alt="ideaslogo"></a>
             <a href=""></a>     
         </div>
-
-
-
-
 
         <div class="searchBox">
             <input type="text" class="serach" placeholder="아이디어를 찾아보세요.">
             <a href=""><button class="searchIcon"><i class="fa fa-search w3-large"></i></button></a>
         </div>
 
-
         <div class="loginBox" id = "myPage">
             <button class="loginBtn" onclick="openRightMenu()">로그인</button></a>
-            <a href="./join.html" id="joinBtn"><button>회원가입</button></a>
+            <a href="" id="joinBtn"><button>회원가입</button></a>
         </div>
-
-        <!--<div class="mypageBox">
-            <button>마이페이지</button>
-        </div> -->
     </header>
-
-
-
-
-
 
 
     <div class="w3-sidebar w3-bar-block" style="display: none;" id="sideBar">
@@ -124,9 +109,6 @@
 
 
 
-
-
-
     <nav>
         <div class="navItems">
             <ul>
@@ -137,140 +119,84 @@
                 <li><a href="">ABOUT</a></li>
             </ul>
         </div>
-
-
     </nav>
 
-
-
-
-
-
-    
     <main>
-        <div class="main-container">
 
-            <div class="ideasIntro">
-                <div class="w3-content" style="max-width:1080px; max-height: 350px; position:relative; overflow: hidden;">
-                <a href=""><img class="mainSlides" src="./image/ideasbanner00.jpg"></a>
-                <a href=""><img class="mainSlides" src="./image/ideasbanner01.jpg"></a>
-                <a href=""><img class="mainSlides" src="./image/ideasbanner02.jpg"></a>
+        <div id="page-wrap">
+            <form method="post" action="#" name="form" onsubmit="return checkAll();">
+                <fieldset>
+                    <legend style="font-size: 24px;">회원정보입력</legend>
+                    <br>
+                    <label for="userId">아이디</label>
+                    <input type="text" name="userId" id="text1" />
+                    <button>중복검사</button><br />
+                    <p class="joinP">*영문대소문자와 숫자 4~12자리로 입력해주세요</p>
+                    <label for="password1">패스워드</label>
+                    <input type="password" name="password1" /><br />
+                    <p  class="joinP">*영문대소문자와 숫자 4~12자리로 입력해주세요</p>
+                    <label for="password2">패스워드 확인</label>
+                    <input type="password" name="password2" /><br /> <br>
+                    <label for="name">이름</label>
+                    <input type="text" name="name" /><br /> <br>
+                    <label for="tel">휴대폰 번호</label>
+                    <input type="tel" name="tel" /> <br>
+                    <br />
+                    <label for="email">이메일</label>
+                    <input type="email" name="email" /> <br>
+                    <br />
+                    <label for="dob">생일</label>
+                    <input type="date" name="dob" /> <br>
+                    <br />                  
+                </fieldset>
+            </div>
                 
-                
-                <a class="w3-btn-floating w3-xlarge" style="position:absolute;top:45%;left:20px; cursor: pointer;" onclick="plusDivs(-1)">❮</a>
-                <a class="w3-btn-floating w3-xlarge" style="position:absolute;top:45%;right:20px; cursor: pointer;" onclick="plusDivs(1)">❯</a>
-            </div>
+                <fieldset>
+                    <legend style="font-size: 24px">관심있는 아이디어</legend>
+                    <p class="joinP">관심있는 아이디어를 선택해서 추가하면 회원님이 좋아할 아이디어를 추천해드립니다.</p>
+                    <br>
 
+                    <h4><b>선택된 아이디어</b></h4>
+                    <div id="cart" style="width: auto; height: 300px; border: 2px solid #ffb923; margin: 20px;">
+                    </div>
+                    <br>
+                    <h4><b>아이디어 목록</b></h4>
+                    <div id="list" style="width: auto; height: 300px; border: 2px solid #ffb923; margin: 20px; align-items: center;" >
+                        <div id="img1" >
+                            <img src="./image/interested01.png" width="150" height="100">
+                            <div>
+                              <p> 최고의 요리를 만들어 소원을 이루자! '요리의별' / 카테고리: 게임</p>
+                              <button onclick="cartAppend('img1');">추가</button>
+                              <button onclick="cartRemove('img1');">삭제</button>
+                            </div>
+                        </div>
+                        <div id="img2">
+                            <img src="./image/interested02.png" width="150" height="100">
+                            <div>
+                            <p> 2022 호랑이의 해. 우리 집을 지켜줄 범캐쳐 / 카테고리: 디자인</p>
+                              <button onclick="cartAppend('img2');">추가</button>
+                              <button onclick="cartRemove('img2');">삭제</button>
+                            </div>
+                        </div>
+                        <div id="img3">
+                            <img src="./image/interested03.png" width="150" height="100">
+                            <div >
+                            <p> 뮤지컬 구름위를 걷는자 비디오 제작 / 카테고리: 공연</p>
+                              <button onclick="cartAppend('img3');">추가</button>
+                              <button onclick="cartRemove('img3');">삭제</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </fieldset>
 
-
-            <hr>
-
-
-            <div class="ideasUpload">
-                <div class="ideasimg">
-                    <img src="./image/ideasicon00.png" style="width: 400px;">
-                </div>
-
-                <div class="goUpload">
-                    <h1><b> IDEAS PROJECT </b></h1>
-                    <ul>
-                        <li style="font-size: 24px;">마음 속 아이디어를 아이디어스에서 현실로!</li>
-                        <li>아이디어스 펀딩은 누구에게나 열려있습니다. 프로젝트를 위한 자금을 마련하고, 제작과 든든한 파트너 네트워크도 확보해보세요.</li>
-                    </ul>
-
-                    <a href="./startidea.html"><button class="uploadBtn"> 프로젝트 등록 </button></a>
-                    <a href=""><button class="guideBtn"> 등록 가이드 </button></a>
-                </div>
-
-            </div>
-
-
-
-
-            <div class="ideasPartner">
-                    <h1><b> 아이디어스 파트너 </b></h1>
-                    <h3>프로젝트를 시작하는데 도움이 필요하신가요?</h3>
-                    <p>아이디어스에서 프로젝트에 도움을 주고 함께할 파트너를 찾을 수 있습니다.</p>
-                    컨텐츠 제작부터 마케팅, 컨설팅 등 펀딩 준비에 필요한 서비스를 제공하는 아이디어스 파트너를 만나보세요.
-                    <p></p>
-                    <div class="partnerBox">
-
-                        <div class="partner">
-
-                        <ul>
-                                <li><h4>출판펀딩파트너</h4></li>
-                                <li><img src="./image/partner00.jpg" style="width:80%"></li>
-                                <li>122,218,524원 펀딩</li>
-                                <li>총 프로젝트 17</li>
-                                <li><a href=""><button class="uploadBtn"> 파트너 보기 </button></a>
-                                    <a href=""><button class="guideBtn"> 파트너 신청 </button></a></li>
-                        </ul>
-
-                        <ul>
-                            <li><h4>게임펀딩파트너</h4></li>
-                            <li><img src="./image/partner01.jpg" style="width: 80%;"></li>
-                            <li>125,654,245원 펀딩</li>
-                            <li>총프로젝트 9</li>
-                            <li><a href=""><button class="uploadBtn"> 파트너 보기 </button></a>
-                                <a href=""><button class="guideBtn"> 파트너 신청 </button></a></li>
-                        </ul>
-
-                        <ul>
-                            <li><h4>뷰티펀딩파트너</h4></li>
-                            <li><img src="./image/partner02.jpg" style="width: 80%;"></li>
-                            <li>511,324,560원 펀딩</li>
-                            <li>총프로젝트 21</li>
-                            <li><a href=""><button class="uploadBtn"> 파트너 보기 </button></a>
-                                <a href=""><button class="guideBtn"> 파트너 신청 </button></a></li>
-                        </ul>
-
-                        <ul>
-                            <li><h4>농식품펀딩파트너</h4></li>
-                            <li><img src="./image/partner03.jpg" style="width: 80%;"></li>
-                            <li>321,584,112원 펀딩</li>
-                            <li>총프로젝트 13</li>
-                            <li><a href=""><button class="uploadBtn"> 파트너 보기 </button></a>
-                                <a href=""><button class="guideBtn"> 파트너 신청 </button></a></li>
-                        </ul>
-
-                </div>
-            </div>
-            <a href=""><button class="morePartner">파트너 더보기</button></a>
-
-            
-
-
-
-            <div class="faq">
-                <p style="color: #ffb923; font-size: 20px;"><b>FAQ</b></p>
-                <a href=""><h1><b>자주묻는질문</b></h1></a>
-                아이디어스 고객님의 편리하고 즐거운 펀딩을 위해 아이디어스가 제공하는 서비스에 대한 안내입니다.
-                <hr>
-
-                <div class="faqBox">
-                    <ul>
-                        <li><h5> <p>Q.</p> <a href="">프로젝트가 어떻게 진행되는지 궁금해요.</a> </h5></li>
-                        <li><h5>  <p>Q.</p> <a href="">펀딩하는 방법이 궁금해요.</a> </h5></li>
-                        <li><h5>  <p>Q.</p><a href="">파트너는 어떻게 찾을 수 있는지 궁금해요.</a> </h5></li>
-                        <li><h5>  <p>Q.</p> <a href="">수수료는 어떻게 되는지 궁금해요.</a> </h5></li>
-                        <li><h5>  <p>Q.</p> <a href="">심사기준이 궁금해요.</a> </h5></li>
-                    </ul>
-
-                </div>
-
-                
-
-            </div>
-
-
-       
-       
-        </div>
-
-
+                <input class="btn" type="submit" name="submit" value="회원가입" style="margin-right: 50px;">
+                <input class="btn" type="reset" name="reset" value="다시입력" />
+            </form>
 
 
     </main>
+
 
 
 
@@ -330,11 +256,7 @@
             </div>
             
             <div class="snsIcon">
-                <!--
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-kakao"></a>
-                -->
+
                 <a href=""><i><img src="./image/kakaotalk.png" alt="kakao" style="width: 50px;"></i></a>
                 <a href=""><i><img src="./image/instagram.png" alt="instagram" style="width: 50px;"></i></a>
                 <a href=""><i><img src="./image/youtube.png" alt="youtube" style="width: 50px;"></i></a>
@@ -346,7 +268,5 @@
 
 
     </footer>
-
-
 </body>
 </html>
